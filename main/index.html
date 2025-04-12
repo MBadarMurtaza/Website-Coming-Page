@@ -3,7 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/output.css" />
     <title>Coming Soon Page</title>
   </head>
-  <body></body>
+  <body>
+    <div
+      class="relative w-full h-[100vh] bg-[url('/images/background.png')] bg-center bg-no-repeat bg-cover px-[8%] py-0"
+    >
+      <img
+        class="w-[120px] py-5 px-0 cursor-pointer"
+        src="/images/logo.png"
+        alt=""
+      />
+      <div class="absolute top-1/2 -translate-y-1/2 text-white">
+        <p>Website is Under Maintenance</p>
+        <h1 class="text-[64px] font-semibold">
+          We're <span class="text-[#ff3735]">Launching</span> Soon
+        </h1>
+        <div class="flex">
+          <div class="basis-[100px]">
+            <p id="days" class="text-[60px] -mb-[14px]">00</p>
+            <span>Days</span>
+          </div>
+          <div class="basis-[100px] ml-5">
+            <p id="hours" class="text-[60px] -mb-[14px] ">00</p>
+            <span>Hours</span>
+          </div>
+          <div class="basis-[100px]">
+            <p id="minutes" class="text-[60px] -mb-[14px]">00</p>
+            <span>Minutes</span>
+          </div>
+          <div class="basis-[100px]">
+            <p id="seconds" class="text-[60px] -mb-[14px]">00</p>
+            <span>Seconds</span>
+          </div>
+        </div>
+        <button
+          class="bg-transparent border-2 border-white outline-none py-[12px] px-[25px] text-white mt-[30px] cursor-pointer flex items-center"
+          type="button"
+        >
+          Learn More
+          <img class="w-[15px] ml-2.5" src="/images/triangle.png" alt="" />
+        </button>
+      </div>
+      <img
+        class="w-[250px] absolute right-[10%] bottom-0 rocket-animation"
+        src="/images/rocket.png"
+        alt=""
+      />
+    </div>
+    <script src="./script.js"></script>
+  </body>
 </html>
